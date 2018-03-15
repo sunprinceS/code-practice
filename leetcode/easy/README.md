@@ -1,10 +1,12 @@
 # Easy 題解
 
 ## 1 ~ 100
+* 21 merge sorted linked list: 水題
 * 70 climb stairs: Fibonacci, DP
 
 ## 100 ~ 200
 * 104 找樹的深度: D&C
+* 155 stack 變形: 建兩個stack, 一個正常, 一個記 min element
 
 ## 200 ~ 300
 * 258 addDigit: 小聰明題，觀察
@@ -20,6 +22,7 @@
 ## 500 ~ 600
 
 ## 600 ~ 700
+* 617 Merge B Tree: 水題
 
 ## 700 ~
 * 746 ClimbStair 變形: DP
