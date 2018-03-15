@@ -8,6 +8,6 @@ public:
 		if(node->left == NULL && node->right == NULL)
 			return 0;
 		else
-			return max(maxDepth(node->right),maxDepth(node->left));
+			return 1 + max(maxDepth(node->right),maxDepth(node->left));
 	}
 };
