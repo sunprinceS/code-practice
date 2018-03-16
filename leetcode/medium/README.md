@@ -1,10 +1,12 @@
 # Medium 題解
 
 ## 1 ~ 100
+* 17 Letter Combination: 水題
 
 ## 100 ~ 200
 
 ## 200 ~ 300
+* 200 Number of Islands: DFS，水題
 
 ## 300 ~ 400
 * 347 Top K Freq. Element: Naive 法為 O(N lg N)，但因為不在意回傳的順序，maintain pq
