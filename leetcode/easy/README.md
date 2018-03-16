@@ -7,6 +7,7 @@
 ## 100 ~ 200
 * 104 找樹的深度: D&C
 * 155 stack 變形: 建兩個stack, 一個正常, 一個記 min element
+* 169 Majority Element: 善加利用 M.E **必定**存在這個條件
 
 ## 200 ~ 300
 * 258 addDigit: 小聰明題，觀察

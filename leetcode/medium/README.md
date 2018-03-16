@@ -2,11 +2,14 @@
 
 ## 1 ~ 100
 * 17 Letter Combination: 水題
+* **48**: 可以先想想一個簡單的圖形，看看有什麼 STL 可實現的方法，可達成順轉 90 的效果
 
 ## 100 ~ 200
 
 ## 200 ~ 300
 * 200 Number of Islands: DFS，水題
+* **229** Majority Element 的推廣: 好題！ maintain 兩個，最後再來檢查
+* 238 Product of Arr except self: 想想如何從 O(n) 空間降到 O(1)
 
 ## 300 ~ 400
 * 347 Top K Freq. Element: Naive 法為 O(N lg N)，但因為不在意回傳的順序，maintain pq
