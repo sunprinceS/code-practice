@@ -8,8 +8,10 @@
 
 ## 200 ~ 300
 * 200 Number of Islands: DFS，水題
+* 213 Rob on Cycle List: DP 做兩次，code 寫乾淨！要討論的 case 太多可能是想錯了
 * **229** Majority Element 的推廣: 好題！ maintain 兩個，最後再來檢查
 * 238 Product of Arr except self: 想想如何從 O(n) 空間降到 O(1)
+* **287 Find Duplicated Number**: 超級精闢，見[筆記](https://sunprinces.github.io/learning/2018/03/leetcode-287---find-the-duplicate-number/)
 
 ## 300 ~ 400
 * 347 Top K Freq. Element: Naive 法為 O(N lg N)，但因為不在意回傳的順序，maintain pq

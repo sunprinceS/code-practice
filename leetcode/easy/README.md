@@ -8,6 +8,7 @@
 * 104 找樹的深度: D&C
 * 155 stack 變形: 建兩個stack, 一個正常, 一個記 min element
 * 169 Majority Element: 善加利用 M.E **必定**存在這個條件
+* 198 Rob House in List: DP
 
 ## 200 ~ 300
 * 258 addDigit: 小聰明題，觀察
@@ -23,6 +24,7 @@
 ## 400 ~ 500
 
 ## 500 ~ 600
+* 538 BST 相關: modified inorder traversal，maintain 一個 類似 global ref 有助於處理
 
 ## 600 ~ 700
 * 617 Merge B Tree: 水題
