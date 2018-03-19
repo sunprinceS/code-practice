@@ -25,6 +25,7 @@
 
 ## 500 ~ 600
 * 538 BST 相關: modified inorder traversal，maintain 一個 類似 global ref 有助於處理
+* 543 Binary Tree Diameter: maintain 一個 global max 去記當前最大值，然後 traverse 拿到 depth
 
 ## 600 ~ 700
 * 617 Merge B Tree: 水題
