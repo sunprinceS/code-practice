@@ -31,12 +31,12 @@ int main(){
   int idx;
   int m;
   for(size_t i=0;i<n-2;++i){
-    idx = upper_bound(ALL(states),states[i] + U) - states.begin() - 1;
+    idx = upper_bound(states.begin()+i,states.end(),states[i] + U) - states.begin() - 1;
     if( i+2 <= idx ){
       m = states[idx] - states[i];
       ret = max(ret,1-((double)(states[i+1] - states[i])/m));
     }
   }
-  cout << ret << endl;
+  cout << setprecision(10) << ret << endl;
 }
 

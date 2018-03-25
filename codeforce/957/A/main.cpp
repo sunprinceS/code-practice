@@ -48,7 +48,10 @@ int main(){
       }
     }
   }
-  if(n==1) cout << "Yes" << endl;
+  if(n==1){
+    if(seq[0] == '?') cout << "Yes" << endl;
+    else cout << "No" << endl;
+  }
   else{
     if(success && can_done) cout << "Yes" << endl;
     else cout << "No" << endl;
