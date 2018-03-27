@@ -4,6 +4,7 @@
 * 17 Letter Combination: 水題
 * **48** rotate 90 degree: 可以先想想一個簡單的圖形，看看有什麼 STL 可實現的方法，可達成順轉 90 的效果
 * 64 min. 2d path sum: 水題
+* 78 subset: 水題
 
 ## 100 ~ 200
 
@@ -20,6 +21,7 @@
 
 ## 400 ~ 500
 * **406 Queue Reconstruction**: 觀察高 or 矮者那一方不受後方插入的影響，先處理那些人
+* **494 Target Sum**: 眉眉角角很多 (1. offset 和 bound ，bound不能當offset用，否則在 iterate 時，你 bound+bound+某元素就超過了 2\*bound+1了 ,2. index 從哪裡開始要統一)
 
 ## 500 ~ 600
 
