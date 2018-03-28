@@ -8,6 +8,7 @@
 * 101 Symmetric Binary Tree: 水題
 * 104 找樹的深度: D&C
 * 155 stack 變形: 建兩個stack, 一個正常, 一個記 min element
+* 167 sorted 2sum: 水題
 * 169 Majority Element: 善加利用 M.E **必定**存在這個條件
 * 198 Rob House in List: DP
 

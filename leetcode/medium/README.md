@@ -3,7 +3,9 @@
 ## 1 ~ 100
 * 17 Letter Combination: 水題
 * **48** rotate 90 degree: 可以先想想一個簡單的圖形，看看有什麼 STL 可實現的方法，可達成順轉 90 的效果
+* **49**: 水題，考 hash 的觀念
 * 64 min. 2d path sum: 水題
+* 75 Sort: 意義不明= = ，水題
 * 78 subset: 水題
 
 ## 100 ~ 200
