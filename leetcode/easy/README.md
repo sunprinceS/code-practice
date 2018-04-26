@@ -13,6 +13,7 @@
 * 198 Rob House in List: DP
 
 ## 200 ~ 300
+* 206 reverse LinkedList: 水題
 * 258 addDigit: 小聰明題，觀察
 * 283 moveZeroes: 注意全非 0 的 case
 
