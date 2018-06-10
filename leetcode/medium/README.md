@@ -19,6 +19,7 @@
 * **287 Find Duplicated Number**: 超級精闢，見[筆記](https://sunprinces.github.io/learning/2018/03/leetcode-287---find-the-duplicate-number/)
 
 ## 300 ~ 400
+* 309: Buy & Sell: 注意要開 tmp variable ( DP 如果只開一個變數去記，要小心覆寫的問題)
 * 347 Top K Freq. Element: Naive 法為 O(N lg N)，但因為不在意回傳的順序，maintain pq
   去記目前 top k 的 elements ，每次 insert 複雜度為 O(lg k) => total 為 O(N lg k)
 * 394 Decode: 用 stack 解很漂亮！
@@ -33,3 +34,4 @@
 * ***647*** Palindromic Substrings: 思考 O(N) 的 Manacher's Algorithm
 
 ## 700 ~
+* **714 Sell & Buy w/ fee**: 很好的 DP 題目
