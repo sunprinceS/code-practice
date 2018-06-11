@@ -6,6 +6,7 @@
 * **49**: 水題，考 hash 的觀念
 * 62: 組合數，用 DP (C++沒有內建的bin. coeff function)
 * 64 min. 2d path sum: 水題
+* 74 Searcg 2D Matrix: 小心 corner case
 * 75 Sort: 意義不明= = ，水題
 * 78 subset: 水題
 
@@ -14,8 +15,10 @@
 ## 200 ~ 300
 * 200 Number of Islands: DFS，水題
 * 213 Rob on Cycle List: DP 做兩次，code 寫乾淨！要討論的 case 太多可能是想錯了
+* 215 Kth Largest Element: 跟 347 方法一樣
 * **229** Majority Element 的推廣: 好題！ maintain 兩個，最後再來檢查
 * 238 Product of Arr except self: 想想如何從 O(n) 空間降到 O(1)
+* 240 Search 2D Matrix: 看一下 [BST 的想法](https://leetcode.com/problems/search-a-2d-matrix-ii/discuss/66207/My-C++-soluation-using-Binary-search-Tree-model-beats-100~~~~)
 * **287 Find Duplicated Number**: 超級精闢，見[筆記](https://sunprinces.github.io/learning/2018/03/leetcode-287---find-the-duplicate-number/)
 
 ## 300 ~ 400
