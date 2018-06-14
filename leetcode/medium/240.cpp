@@ -14,44 +14,56 @@ s<<"]";
 return s;
 }
 
-//看一下 https://leetcode.com/problems/search-a-2d-matrix-ii/discuss/66207/My-C++-soluation-using-Binary-search-Tree-model-beats-100~~~~
 class Solution{
   public:
+    //bool searchMatrix(vector<vector<int>>& matrix, int target) {
+        //int m = matrix.size(),n=0;
+        //if(m) n = matrix[0].size();
+        //if(!m || !n) return false;
+
+        //int l = 0,r = m;
+        //int mid;
+        ////find middle row
+        //while(l!=r){
+          //mid = (l+r) / 2;
+          //if(matrix[mid][0] < target)
+            //l = mid + 1;
+          //else
+            //r = mid;
+        //}
+        //int row_mid = r;
+        //if (!row_mid){
+          //if(binary_search(matrix[0].begin(),matrix[0].end(),target)) return true;
+          //else return false;
+        //}
+
+        ////find middle column
+        //l = 0,r = n;
+        //while(l!=r){
+          //mid = (l+r) / 2;
+          //if(matrix[0][mid] < target)
+            //l = mid + 1;
+          //else
+            //r = mid;
+        //}
+        //int col_mid = r;
+        //if (!col_mid) return false;
+
+        //for(size_t i=0;i<m;++i){
+          //if(binary_search(matrix[i].begin(),matrix[i].end(),target)) return true;
+        //}
+        //return false;
+    //}
     bool searchMatrix(vector<vector<int>>& matrix, int target) {
         int m = matrix.size(),n=0;
         if(m) n = matrix[0].size();
         if(!m || !n) return false;
 
-        int l = 0,r = m;
-        int mid;
-        //find middle row
-        while(l!=r){
-          mid = (l+r) / 2;
-          if(matrix[mid][0] < target)
-            l = mid + 1;
-          else
-            r = mid;
-        }
-        int row_mid = r;
-        if (!row_mid){
-          if(binary_search(matrix[0].begin(),matrix[0].end(),target)) return true;
-          else return false;
-        }
-
-        //find middle column
-        l = 0,r = n;
-        while(l!=r){
-          mid = (l+r) / 2;
-          if(matrix[0][mid] < target)
-            l = mid + 1;
-          else
-            r = mid;
-        }
-        int col_mid = r;
-        if (!col_mid) return false;
-
-        for(size_t i=0;i<m;++i){
-          if(binary_search(matrix[i].begin(),matrix[i].end(),target)) return true;
+        int i = m-1,j = 0;
+        while(i>=0 && j < n){
+          if(matrix[i][j] > target) --i;
+          else if(matrix[i][j] < target) ++j;
+          else return true;
         }
         return false;
     }

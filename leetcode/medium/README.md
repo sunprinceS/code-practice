@@ -1,14 +1,17 @@
 # Medium 題解
 
 ## 1 ~ 100
+* **11 Container w/ motst water**: 弄清楚優化的方向，再設計演算法
 * 17 Letter Combination: 水題
 * **48** rotate 90 degree: 可以先想想一個簡單的圖形，看看有什麼 STL 可實現的方法，可達成順轉 90 的效果
 * **49**: 水題，考 hash 的觀念
+* 55: 原想法是D&C，但可用 greedy 去解且較簡潔
 * 62: 組合數，用 DP (C++沒有內建的bin. coeff function)
 * 64 min. 2d path sum: 水題
 * 74 Searcg 2D Matrix: 小心 corner case
 * 75 Sort: 意義不明= = ，水題
 * 78 subset: 水題
+* 96 Unique BST: DP水題，求的其實就是卡特蘭數
 
 ## 100 ~ 200
 
@@ -18,11 +21,14 @@
 * 215 Kth Largest Element: 跟 347 方法一樣
 * **229** Majority Element 的推廣: 好題！ maintain 兩個，最後再來檢查
 * 238 Product of Arr except self: 想想如何從 O(n) 空間降到 O(1)
-* 240 Search 2D Matrix: 看一下 [BST 的想法](https://leetcode.com/problems/search-a-2d-matrix-ii/discuss/66207/My-C++-soluation-using-Binary-search-Tree-model-beats-100~~~~)
+* **240 Search 2D Matrix**: 看一下 [此作法](https://leetcode.com/problems/search-a-2d-matrix-ii/discuss/66207/My-C++-soluation-using-Binary-search-Tree-model-beats-100~~~~)
+* 279 Perfect Square: D&C with memorization, O(sqrt(n)), 每一步有 Greedy 策略
 * **287 Find Duplicated Number**: 超級精闢，見[筆記](https://sunprinces.github.io/learning/2018/03/leetcode-287---find-the-duplicate-number/)
 
 ## 300 ~ 400
-* 309: Buy & Sell: 注意要開 tmp variable ( DP 如果只開一個變數去記，要小心覆寫的問題)
+* 309 Buy & Sell: 注意要開 tmp variable ( DP 如果只開一個變數去記，要小心覆寫的問題)
+* 322 Coin Change: 279 的 general 版本， O(amount * n)，不存在 greedy 策略 (因不保
+  證一定可換)
 * 347 Top K Freq. Element: Naive 法為 O(N lg N)，但因為不在意回傳的順序，maintain pq
   去記目前 top k 的 elements ，每次 insert 複雜度為 O(lg k) => total 為 O(N lg k)
 * 394 Decode: 用 stack 解很漂亮！

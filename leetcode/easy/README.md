@@ -22,12 +22,13 @@
 
 ## 300 ~ 400
 * 338 countBits: 觀察，注意到 ret[i&(i-1)] + 1 是個更簡潔的寫法(進位時(i.e i = pow(2,\*))，i&(i-1) 為 0)
+* 344: 水題
+
+## 400 ~ 500
 * 412 fizzBuzz: 水題
 * **448** findDisappearedNumbers: 利用將對應位置 mark 成負，保有 array 資訊的情況同時立 flag
 * 461 Hamming Distance: 利用 `__buildin_popcount` 一行結束！
 * 463: 
-
-## 400 ~ 500
 
 ## 500 ~ 600
 * 538 BST 相關: modified inorder traversal，maintain 一個 類似 global ref 有助於處理
