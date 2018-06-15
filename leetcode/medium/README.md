@@ -17,6 +17,9 @@
 
 ## 200 ~ 300
 * 200 Number of Islands: DFS，水題
+* 207 Course Schedule: DFS 找 cycle，直接 recursive 寫，用 stack 硬幹太髒，加
+* 210 Course Schedule: DFS 找 topological order，最後要 reverse
+  superNode 時，status 和 edges 都要多開一個
 * 213 Rob on Cycle List: DP 做兩次，code 寫乾淨！要討論的 case 太多可能是想錯了
 * 215 Kth Largest Element: 跟 347 方法一樣
 * **229** Majority Element 的推廣: 好題！ maintain 兩個，最後再來檢查
@@ -44,3 +47,4 @@
 
 ## 700 ~
 * **714 Sell & Buy w/ fee**: 很好的 DP 題目
+* 763 Partition Labels: 水題
