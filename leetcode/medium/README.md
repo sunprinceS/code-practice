@@ -3,6 +3,8 @@
 ## 1 ~ 100
 * **11 Container w/ motst water**: 弄清楚優化的方向，再設計演算法
 * 17 Letter Combination: 水題
+* 39 Combination Sum: DFS，target = 0這個條件好用， time complexity: O(N^h), N is # of candidates, h is target/min(candidates)
+* 40 Combination Sum2: DFS, 39 的變形
 * **48** rotate 90 degree: 可以先想想一個簡單的圖形，看看有什麼 STL 可實現的方法，可達成順轉 90 的效果
 * **49**: 水題，考 hash 的觀念
 * 55: 原想法是D&C，但可用 greedy 去解且較簡潔
@@ -11,6 +13,7 @@
 * 74 Searcg 2D Matrix: 小心 corner case
 * 75 Sort: 意義不明= = ，水題
 * 78 subset: 水題
+* 79 find word: 水題
 * 96 Unique BST: DP水題，求的其實就是卡特蘭數
 
 ## 100 ~ 200
