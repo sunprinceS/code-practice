@@ -45,6 +45,7 @@
 * **494 Target Sum**: 眉眉角角很多 (1. offset 和 bound ，bound不能當offset用，否則在 iterate 時，你 bound+bound+某元素就超過了 2\*bound+1了 ,2. index 從哪裡開始要統一)
 
 ## 500 ~ 600
+* **523 Continuous Subarray Sum**: mod 有 cycle 性，利用此將複雜度從 n^2 -> n!
 
 ## 600 ~ 700
 * ***647*** Palindromic Substrings: 思考 O(N) 的 Manacher's Algorithm

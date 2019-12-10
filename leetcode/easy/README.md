@@ -21,6 +21,7 @@
 * 283 moveZeroes: 注意全非 0 的 case
 
 ## 300 ~ 400
+* 303 RangeSum Query: 不要想到 O(n^2) 去了， O(n) 就可以解掉
 * 338 countBits: 觀察，注意到 ret[i&(i-1)] + 1 是個更簡潔的寫法(進位時(i.e i = pow(2,\*))，i&(i-1) 為 0)
 * 344: 水題
 
