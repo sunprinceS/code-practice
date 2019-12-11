@@ -17,42 +17,25 @@ return s;
 class Solution{
   public:
     int maxProfit(vector<int>& prices) {
-        if(prices.size() <= 1) return 0;
-
-        vector<int> deltas(prices.size()-1);
-        for(size_t i=0;i<deltas.size();++i){
-          deltas[i] = prices[i+1]-prices[i];
-        }
-        return max(0,maxSubArrSum(deltas,0,deltas.size()-1));
-    }
-    int maxSubArrSum(vector<int>& v,int l,int r){
-        if(l == r) return v[l];
-
-        int m = (l+r)/2;
-        return max(max(maxSubArrSum(v,l,m),maxSubArrSum(v,m+1,r)),maxCrossSum(v,l,r,m));
-    }
-    int maxCrossSum(vector<int>& v,int l,int r,int m){
-      int sum = 0;
-      int l_sum = INT_MIN;
-      for(int i=m;i>=l;--i){
-        sum += v[i];
-        if(sum > l_sum)
-          l_sum = sum;
+      if (prices.size() < 2) return 0;
+      vector<int> deltas(prices.size()-1);
+      for(int i=0; i< deltas.size(); ++i){
+        deltas[i] = prices[i+1] - prices[i];
       }
-      sum = 0;
-      int r_sum = INT_MIN;
-      for(int i=m+1;i<=r;++i){
-        sum += v[i];
-        if(sum > r_sum)
-          r_sum = sum;
+      vector<int> dp(deltas.size());
+      int ret = dp[0] = max(0, deltas[0]);
+      for(int i=1;i<deltas.size();++i){
+        dp[i] = max(deltas[i], deltas[i] + dp[i-1]);
+        ret = max(dp[i], ret);
       }
-      return r_sum + l_sum;
+      return ret;
     }
 };
 
 int main(){
   //vector<int> vec({10,4,3,2,1});
-  vector<int> vec({3,2,10,1,4});
+  //vector<int> vec({7,1,5,3,6,4});
+  vector<int> vec({1,2,4});
   Solution sol;
   cout << sol.maxProfit(vec) << endl;
 }
