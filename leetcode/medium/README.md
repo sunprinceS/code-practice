@@ -38,6 +38,7 @@
   證一定可換)
 * 347 Top K Freq. Element: Naive 法為 O(N lg N)，但因為不在意回傳的順序，maintain pq
   去記目前 top k 的 elements ，每次 insert 複雜度為 O(lg k) => total 為 O(N lg k)
+* 377 Combination Sum IV: 要用 unsigned int...
 * 394 Decode: 用 stack 解很漂亮！
 
 ## 400 ~ 500
