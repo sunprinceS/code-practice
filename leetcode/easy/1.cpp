@@ -19,7 +19,7 @@ public:
     // from the description
     // * exactly one solution
     // * cannot same element twice
-    // -> no duplicate number in nums!
+    // -> no duplicate number in nums! -> this claim is wrong
     vector<int> twoSum(vector<int>& nums, int target) {
       unordered_map<int,int> ns;
       ns.reserve(nums.size());
@@ -38,6 +38,6 @@ public:
 int main(){
   Solution sol;
   vector<int> nums;
-  nums = {3,2,4};
+  nums = {3,3};
   cout << sol.twoSum(nums,6) << endl;
 }
